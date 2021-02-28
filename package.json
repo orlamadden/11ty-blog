@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "npx eleventy",
-        "watch": "npx eleventy --watch",
+        "watch": "npx eleventy --watch"
     },
     "keywords": [],
     "author": "",

@@ -4,8 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "npx eleventy",
-        "watch": "npx eleventy --watch"
+        "watch:sass": "sass -- watch src/sass:_site/css",
+        "build:sass": "sass src/sass:_site/css",
+        "build:eleventy": "npx eleventy",
+        "watch:eleventy": "npx eleventy --watch",
+        "start": "npm-run-all build:sass --parallel watch:*",
+        "build": "npm-run-all build:*"
     },
     "keywords": [],
     "author": "",
